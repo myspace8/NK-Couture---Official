@@ -1,13 +1,13 @@
 
+// Mobile navigation toggle
 
 const toggleButton = document.querySelector('.mobile-nav-toggle');
-const navLink = document.querySelector('.navbar ul');
+const navbar = document.querySelector('.navbar');
 
 toggleButton.addEventListener('click', function(e) {
     e.preventDefault();
+    navbar.classList.toggle('active');
     toggleButton.classList.toggle('is-clicked');
-    navLink.classList.toggle('active');
-    // navLink.style.right = '0'
 });
 
 
