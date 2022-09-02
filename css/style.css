@@ -85,8 +85,9 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: space-between;
 }
 
+/* Desktop navbar ul */
 .navbar ul {
-  display: none;
+  display: flex;
 }
 
 .navbar ul li {
@@ -112,10 +113,11 @@ h1, h2, h3, h4, h5, h6 {
   display: none;
   cursor: pointer;
   position: absolute;
-  height: 10px;
-  width: 70px;
-  right: -11px;
-  top: -6px;
+  height: 16px;
+  width: 30px;
+  right: 0;
+  top: -8px;
+  background-color: transparent;
 }
 
 @media (max-width: 991px) {
@@ -156,10 +158,9 @@ h1, h2, h3, h4, h5, h6 {
 /* Positioning toggle icon when clicked */
 .active .mobile-nav-toggle {
   position: absolute;
-  height: 10px;
-  width: 70px;
-  right: 0;
-  top: 35px;
+  width: 25px;
+  right: 15px;
+  top: 30px;
 }
 
 /* Not showing the middle... width: 0px */
@@ -179,6 +180,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: inherit;
   width: 30px;
   height: 2px;
+  left: -12px;
   position: absolute;
   transition-duration : 0.2s, 0.2s;
   transition-delay    : 0.2s, 0s;
@@ -282,7 +284,7 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: underline;
 }
 
-.cta-collection {
+.cta {
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -302,12 +304,13 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-#collection {
+#collection,
+#gallery {
   padding-top: 40px;
 }
 
 /*--------------------------------------------------------------
-# Latest collection title container
+# Latest collection title --- Title component style
 --------------------------------------------------------------*/
 
 
@@ -330,6 +333,64 @@ h1, h2, h3, h4, h5, h6 {
   background: #f82249;
   bottom: 0;
   left: calc(50% - 40px);
+}
+
+
+#collection img {
+  width: 100%;
+  height: auto;
+}
+
+#collection .image {
+  width: 75%;
+  text-align: right;
+}
+
+
+
+#collection .content {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-top: 20px;
+}
+
+#collection .quote {
+  background-color: #f82249;
+  position: absolute;
+  width: 79%;
+  height: 30%;
+  bottom: 70%;
+  left: 5%;
+  z-index: -1;
+}
+
+
+#collection .collection-logo {
+  position: relative;
+}
+
+#collection .collection-logo h1 {
+  transform: rotate(90deg);
+  position: absolute;
+  left: -100px;
+  line-height: 0.89;
+  letter-spacing: 20px;
+  text-transform: uppercase;
+  font-size: 30px;
+  text-align: center;
+}
+
+#collection .collection-logo h1 span {
+  font-size: 12px;
+  letter-spacing: 8px;
+}
+
+#collection .links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 
