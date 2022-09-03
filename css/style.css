@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&family=Raleway:wght@400;500;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;800&family=Open+Sans:wght@400;700;800&family=Raleway:wght@400;500&display=swap');
 
 * {
     box-sizing: border-box;
@@ -9,7 +8,7 @@
 
 body {
   background: #fff;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 a {
@@ -24,8 +23,6 @@ a:hover, a:active, a:focus {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
   overflow-wrap: break-word;
 }
 
@@ -64,7 +61,7 @@ h1, h2, h3, h4, h5, h6 {
 .header .logo h1 {
   font-size: 16px;
   margin: 0;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 500;
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -133,6 +130,15 @@ h1, h2, h3, h4, h5, h6 {
   .nav-container {
     display: none;
   }
+  
+  .active.nav-container {
+    transform: scaleY(1);
+    transition: transform 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition-delay: 0s;
+    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;   */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+
+  }
 
   .active.nav-container {
     display: block;
@@ -144,6 +150,7 @@ h1, h2, h3, h4, h5, h6 {
     left: 0;
     right: 0;
   }
+
 
   .nav-container ul {
     background-color: transparent;
@@ -200,7 +207,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero:before {
   content: "";
-  background: rgba(6, 12, 34, 0.8);
+  background: rgba(6, 12, 34, 0.68);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -260,12 +267,12 @@ h1, h2, h3, h4, h5, h6 {
 /* Mobile view font size */
 @media (max-width: 991px) {
   #hero h1 {
-    font-size: 34px;
+    font-size: 30px;
     line-height: 1.125;
   }
 
   #hero p {
-    font-size: 16px;
+    font-size: 15px;
   }
 }
 
@@ -322,6 +329,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #collection .quote {
   background-color: #f82249;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
   position: absolute;
   width: 79%;
   height: 30%;
@@ -343,12 +351,21 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 20px;
   text-transform: uppercase;
   font-size: 30px;
+  color: #23262b;
+  text-shadow: 0px 0px 1px #393e46, 
+      0px 0px 2px #222831;
   text-align: center;
 }
 
 #collection .collection-logo h1 span {
   font-size: 12px;
   letter-spacing: 8px;
+}
+
+#collection .image span {
+  font-size: 14px;
+  font-weight: 300;
+  color: #23262b;
 }
 
 #collection .links {
