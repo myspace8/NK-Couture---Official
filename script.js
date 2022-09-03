@@ -15,16 +15,22 @@ function stickHeader() {
 // Mobile navigation toggle
 const navBurger = document.querySelector('.navigation-burger');
 const nav = document.querySelector('.nav-container');
+const overlay = document.querySelector('.overlay');
 
 navBurger.addEventListener('click', function(e) {
     e.preventDefault();
     nav.classList.toggle('active');
     navBurger.classList.toggle('is-clicked');
     header.classList.toggle('header-active');
+    overlay.classList.toggle('active');
 });
 
-
-
+overlay.addEventListener('click', () => {
+    nav.classList.remove('active');
+    navBurger.classList.remove('is-clicked');
+    header.classList.remove('header-active');
+    overlay.classList.remove('active');
+})
 
 
 
