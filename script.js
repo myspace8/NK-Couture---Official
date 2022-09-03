@@ -1,13 +1,25 @@
+// Sticky header
+const header = document.querySelector('.header');
+
+window.addEventListener('scroll', stickHeader);
+function stickHeader() {
+    if(window.scrollY > header.offsetHeight) {
+        header.classList.add('header-scrolled');
+    } else {
+        header.classList.remove('header-scrolled');
+    }
+}
+
+
 
 // Mobile navigation toggle
+const navBurger = document.querySelector('.navigation-burger');
+const nav = document.querySelector('.nav-container');
 
-const toggleButton = document.querySelector('.mobile-nav-toggle');
-const navbar = document.querySelector('.navbar');
-
-toggleButton.addEventListener('click', function(e) {
+navBurger.addEventListener('click', function(e) {
     e.preventDefault();
-    navbar.classList.toggle('active');
-    toggleButton.classList.toggle('is-clicked');
+    nav.classList.toggle('active');
+    navBurger.classList.toggle('is-clicked');
 });
 
 
