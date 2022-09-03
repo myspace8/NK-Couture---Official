@@ -20,6 +20,7 @@ navBurger.addEventListener('click', function(e) {
     e.preventDefault();
     nav.classList.toggle('active');
     navBurger.classList.toggle('is-clicked');
+    header.classList.toggle('header-active');
 });
 
 
