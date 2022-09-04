@@ -17,9 +17,9 @@ a {
   transition: 0.5s;
 }
 
-a:hover, a:active, a:focus {
+a:hover, a:focus {
   outline: none;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 /* h1, h2, h3, h4, h5, h6 {
@@ -306,6 +306,7 @@ a:hover, a:active, a:focus {
 .cta {
   display: flex;
   align-items: center;
+  justify-content: center;
   cursor: pointer;
   margin-left: 28px;
 }
@@ -677,4 +678,16 @@ a:hover, a:active, a:focus {
   .container {
     max-width: 1320px;
   }
+}
+
+
+
+/*--------------------------------------------------------------
+# Gallery Mobile view
+--------------------------------------------------------------*/
+
+.gallery-title p {
+  margin-top: 12px;
+  font-size: 18px;
+  font-weight: 600;
 }

@@ -1,0 +1,50 @@
+
+img {
+    width: 315px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.carousel {
+    position: relative;
+    height: 530px;
+    width: 315px;
+}
+
+.image-container {
+    display: flex;
+    transform: translateX(0);
+    transition: transform 0.5s ease-in-out;
+}
+
+.buttons-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+.buttons-container button {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    height: 500px;
+}
+
+.buttons-container .left-btn {
+    position: absolute;
+    top: 0;
+    left: -45px;
+}
+
+.buttons-container .right-btn {
+    position: absolute;
+    top: 0;
+    right: -45px;
+}
