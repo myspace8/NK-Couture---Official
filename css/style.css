@@ -378,6 +378,10 @@ a:hover, a:focus {
 # Latest collection MOBILE VIEW 
 --------------------------------------------------------------*/
 
+.collection-mobile {
+  padding-top: 28px !important;
+}
+
 #collection img {
   display: block;
   width: 100%;
