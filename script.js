@@ -35,12 +35,13 @@ overlay.addEventListener('click', () => {
 const imageCarousel = document.querySelector('.image-container');
 const next = document.getElementById('right');
 const prev = document.getElementById('left');
+const carouselImage = document.querySelectorAll('.carousel img');
 
 const img = document.querySelectorAll('#imgs img');
 
 let idx = 3;
 
-let interval = setInterval(run, 2000);
+let interval = setInterval(run, 5000);
 
 function run() {
     idx++;
@@ -64,7 +65,7 @@ changeImage()
 
 function resetInterval() {
     clearInterval(interval);
-    interval = setInterval(run, 2000);
+    interval = setInterval(run, 5000);
 }
 
 next.addEventListener('click', () => {

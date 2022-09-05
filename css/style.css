@@ -19,7 +19,7 @@ a {
 
 a:hover, a:focus {
   outline: none;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 /* h1, h2, h3, h4, h5, h6 {
@@ -107,11 +107,13 @@ a:hover, a:focus {
   margin-left: 18px;
 }
 
+.navbar ul li a:hover {
+  color: #f82249;
+}
+
 .navbar ul li {
   list-style-type: none;
 }
-
-
 
 /*--------------------------------------------------------------
 # Mobile nav toggle
@@ -133,9 +135,13 @@ a:hover, a:focus {
     display: none;
   }
 
+  .nav-container {
+    opacity: 0;
+    transition: all 800ms ease;
+  }
+
   .active.nav-container {
     opacity: 1;
-    transition: all 400ms ease;
     display: block;
     background-color: #000;
     position: fixed;
@@ -157,13 +163,9 @@ a:hover, a:focus {
   .active.nav-container .mobile-ul {
     display: block;
   }
-
-  .nav-container .mobile-ul li {
-    border-bottom: 1px solid #ebebeb77;
-  }
-
   
   .nav-container .mobile-ul li a {
+    border-bottom: 1px solid #ebebeb77;
     display: block;
     width: 100%;
     color: #fff;
@@ -341,7 +343,7 @@ a:hover, a:focus {
 
 #collection,
 #gallery {
-  padding-top: 40px;
+  padding-top: 30px;
 }
 
 /*--------------------------------------------------------------
@@ -443,12 +445,17 @@ a:hover, a:focus {
 }
 
 /*--------------------------------------------------------------
-# Latest collection MOBILE VIEW 
+# Latest collection DESKTOP VIEW 
 --------------------------------------------------------------*/
 
 @media (min-width: 991px) {
   .collection-mobile {
     display: none;
+  }
+
+  #collection,
+  #gallery {
+    padding-top: 40px;
   }
 
   .desktop-collection-title {
@@ -686,8 +693,4 @@ a:hover, a:focus {
 # Gallery Mobile view
 --------------------------------------------------------------*/
 
-.gallery-title p {
-  margin-top: 12px;
-  font-size: 18px;
-  font-weight: 600;
-}
+

@@ -1,5 +1,5 @@
 
-img {
+.carousel img {
     width: 315px;
     height: 500px;
     object-fit: cover;
@@ -35,6 +35,7 @@ img {
     background-color: rgba(0, 0, 0, 0);
     border: none;
     height: 500px;
+    cursor: pointer;
 }
 
 .buttons-container .left-btn {
