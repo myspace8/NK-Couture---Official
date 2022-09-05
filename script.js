@@ -94,7 +94,7 @@ scrollto.forEach(scrollto => {
         if(nav.classList.contains('active')) {
             nav.classList.remove('active');
             navBurger.classList.toggle('is-clicked');
+            overlay.classList.remove('active');
         }
-    
     })
 });
