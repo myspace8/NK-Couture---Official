@@ -13,8 +13,9 @@
 }
 
 .carousel {
+    background-color: black;
     position: relative;
-    height: 530px;
+    height: 500px;
     width: 315px;
 }
 

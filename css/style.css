@@ -179,8 +179,8 @@ a:hover, a:focus {
   
 
   .nav-container .socials {
-    display: none;
     /* display: flex; */
+    display: none;
     justify-content: center;
     align-items: center;
     position: absolute;
@@ -188,6 +188,7 @@ a:hover, a:focus {
     right: 0;
     top: 250px;
     bottom: 0;
+    z-index: 10000;
   }
 
   /* Overlay */
@@ -296,7 +297,7 @@ a:hover, a:focus {
 #hero p {
   color: #ebebeb;
   font-size: 20px;
-  margin-bottom: 1rem;
+  /* margin-bottom: 18px; */
   text-align: center;
   width: 80%;
 }
