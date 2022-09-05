@@ -85,3 +85,16 @@ prev.addEventListener('click', () => {
     changeImage();
     resetInterval();
 })
+
+// Scrollto with ofset on links with a class name .scrollto
+
+const scrollto = document.querySelectorAll('.scrollto');
+scrollto.forEach(scrollto => {
+    scrollto.addEventListener('click', () => {
+        if(nav.classList.contains('active')) {
+            nav.classList.remove('active');
+            navBurger.classList.toggle('is-clicked');
+        }
+    
+    })
+});

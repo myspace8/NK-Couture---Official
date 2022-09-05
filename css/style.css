@@ -22,11 +22,6 @@ a:hover, a:focus {
   text-decoration: none;
 }
 
-/* h1, h2, h3, h4, h5, h6 {
-  overflow-wrap: break-word;
-} */
-
-
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -178,17 +173,37 @@ a:hover, a:focus {
   }
   
 
-  .nav-container .socials {
-    /* display: flex; */
-    display: none;
+  .active.nav-container .socials {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: #fff;
     position: absolute;
     left: 0;
     right: 0;
     top: 250px;
     bottom: 0;
-    z-index: 10000;
+    transition: all 400ms ease;
+  }
+
+  .nav-container .socials img {
+    background-color: #fff;
+    border-radius: 3px;
+  }
+
+  .nav-container .socials img:hover,
+  .nav-container .socials img:focus {
+    background-color: #f82249;
+    transition: all 400ms ease;
+  }
+
+  .nav-container .socials span {
+    margin-bottom: 18px;
+  }
+
+  .nav-container .socials a {
+    margin: 12px;
   }
 
   /* Overlay */
