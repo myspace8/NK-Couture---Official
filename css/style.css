@@ -9,6 +9,7 @@
 body {
   background: #fff;
   font-family: 'Inter', sans-serif;
+  font-size: 16px;
 }
 
 a {
@@ -141,7 +142,7 @@ a:hover, a:focus {
     background-color: #000;
     position: fixed;
     width: 100vw;
-    height: 60vh;
+    height: 100vh;
     top: calc(0% + 60px);
     left: 0;
     right: 0;
@@ -184,22 +185,23 @@ a:hover, a:focus {
     right: 0;
     top: 250px;
     bottom: 0;
-    transition: all 400ms ease;
   }
 
   .nav-container .socials img {
-    background-color: #fff;
+    background-color: #f82249b9;
     border-radius: 3px;
+    transition: all 700ms ease;
   }
 
   .nav-container .socials img:hover,
   .nav-container .socials img:focus {
     background-color: #f82249;
-    transition: all 400ms ease;
   }
 
   .nav-container .socials span {
-    margin-bottom: 18px;
+    color: #777;
+    text-transform: uppercase;
+    margin-bottom: 22px;
   }
 
   .nav-container .socials a {
@@ -325,7 +327,6 @@ a:hover, a:focus {
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
   margin-left: 28px;
 }
 
