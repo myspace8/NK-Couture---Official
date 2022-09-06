@@ -467,7 +467,6 @@ a:hover, a:focus {
 }
 
 
-
 /*--------------------------------------------------------------
 # Latest collection DESKTOP VIEW 
 --------------------------------------------------------------*/
@@ -725,6 +724,7 @@ a:hover, a:focus {
 
 .testimonial-title p {
   font-size: 18px;
+  text-transform: uppercase;
   font-weight: 700;
   margin-top: 12px;
 }
@@ -757,6 +757,7 @@ a:hover, a:focus {
 }
 
 #testimonial .testimonial-content .testimony-text span {
+  color: #777;
   margin-top: 12px;
 }
 
