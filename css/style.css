@@ -460,10 +460,12 @@ a:hover, a:focus {
 
 #collection .links {
   display: flex;
-  /* flex-direction: column; */
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+#collection .links .cta {
+  margin-left: 13px;
 }
 
 
