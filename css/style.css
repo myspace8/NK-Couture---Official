@@ -189,7 +189,7 @@ a:hover, a:focus {
 
   .nav-container .socials img {
     background: rgb(2, 0, 36);
-    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(248,34,73,1) 0%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(248,34,73,1) 0%, rgb(170, 168, 168) 100%);
     border-radius: 3px;
     transition: all 700ms ease;
   }
@@ -454,8 +454,8 @@ a:hover, a:focus {
 }
 
 #collection .image span {
-  font-size: 14px;
-  color: #23262b;
+  font-size: 12px;
+  color: #777;
 }
 
 #collection .links {
@@ -465,6 +465,8 @@ a:hover, a:focus {
   align-items: center;
   text-align: center;
 }
+
+
 
 /*--------------------------------------------------------------
 # Latest collection DESKTOP VIEW 
@@ -717,10 +719,13 @@ a:hover, a:focus {
 # Gallery Mobile view
 --------------------------------------------------------------*/
 
+.testimonial-title {
+  padding-bottom: 16px;
+}
+
 .testimonial-title p {
   font-size: 18px;
   font-weight: 700;
-  color: #777;
   margin-top: 12px;
 }
 
