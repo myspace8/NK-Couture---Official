@@ -247,30 +247,81 @@
 
                 <div class="form-container">
                     <form action="#">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" placeholder="Your name..">
+                        <div class="row">
+                            <div class="name">
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Your Name">
+                            </div>
+                            <div class="mail">
+                                <input type="text" class="form-control" id="email" placeholder="Your Email">
+                            </div>
+                        </div>
 
-                        <label for="email">Email</label>
-                        <input type="text" id="email" placeholder="Your email">
+                        <div class="text-area">
+                            <textarea name="subject" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                        </div>
 
-                        <textarea name="subject" id="" cols="30" rows="10" placeholder="Message"></textarea>
-
-                        <input type="submit" value="Submit">
+                        <div class="submit-btn">
+                            <input type="submit" value="Submit">
+                        </div>
                     </form>
                 </div>
 
-                <div class="location">
+                <div class="map-container">
+                    <h2>Where to find us</h2>
                     <div id="map">
-
-                    </div>
-
-                    <div class="address">
 
                     </div>
                 </div>
 
                 <!-- ... -->
         </section><!-- ===== End Latest collection MOBILE VIEW ===== -->
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-container">
+                <div class="address-mail">
+                    <div class="location-address">
+                        <i class="bi bi-goe-alt">&capand;</i>
+                        <h3>Address</h3>
+                        <address>Lorem street, Accra, Ghana</address>
+                    </div>
+        
+                    <div class="email-address">
+                        <i class="bi bi-envelop">&capand;</i>
+                        <h3>Email</h3>
+                        <p><a href="mailto:info@NKcouture.com">info@NKcouture.com</a></p>
+                    </div>
+                </div>
+                
+                <div class="phone-social">
+                    <div class="contact-phone">
+                        <i class="bi bi-phone">&capand;</i>
+                        <h3>Phone Number</h3>
+                        <p><a href="tell:+233541286040">+233 541 128 6040</a></p>
+                    </div>
+        
+                    <div class="socia">   
+                        <i class="bi bi-phone">&capand;</i>
+                        <h3>Get in touch</h3> 
+                        <div>
+                            <a href="#">
+                                <img src="./assets/svg-files/instagram.svg" width="32" height="32" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="./assets/svg-files/whatsapp.svg" width="32" height="32" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="./assets/svg-files/facebook.svg" width="32" height="32" alt="">
+                            </a>
+                        </div>                
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright">
+                &copy; Copyright <strong>NKcouture</strong>. All Rights Reserved
+            </div>
+        </footer>
 
     </main>
 
