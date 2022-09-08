@@ -717,7 +717,7 @@ a:hover, a:focus {
 
 
 /*--------------------------------------------------------------
-# Gallery Mobile view
+# Testimonial 
 --------------------------------------------------------------*/
 
 .testimonial-title {
@@ -737,6 +737,7 @@ a:hover, a:focus {
   background-color: #000;
   color: #fff;
   padding: 12px 0;
+  padding-right: 5px;
 }
 
 #testimonial .testimonial-content img {
@@ -813,7 +814,7 @@ form .text-area textarea {
   padding: 12px;
   font-family: inherit;
   margin-bottom: 12px;
-  color: #23262b;
+  color: #f82249;
 }
 
 
@@ -902,6 +903,10 @@ footer {
 
 footer h3 {
   margin: 12px;
+}
+
+footer a {
+  color: #f82249;
 }
 
 .footer-container .address-mail {
