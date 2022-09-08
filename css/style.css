@@ -770,7 +770,7 @@ a:hover, a:focus {
 # Contact
 --------------------------------------------------------------*/
 
-#contact .contact-title {
+/* #contact .contact-title {
   padding-top: 28px;
 }
 
@@ -784,7 +784,7 @@ a:hover, a:focus {
   padding: 16px;
 }
 
-input[type=text] {
+.form-control {
   font-family: inherit;
   padding: 12px;
   border: 1px solid #777;
@@ -792,7 +792,7 @@ input[type=text] {
   margin: 12px;
 }
 
-input[type=text]:focus, textarea:focus {
+.form-control:focus, textarea:focus {
   background-color: #ddd;
   outline: none;
   border: none;
@@ -834,7 +834,7 @@ form .submit-btn {
   margin: 0 auto;
 }
 
-input[type=submit] {
+.submit-btn input, .submit {
   cursor: pointer;
   color: #fff;
   font-family: inherit;
@@ -864,13 +864,15 @@ input[type=submit] {
     margin: 12px 0;
   }
   
-}
+} */
 
 .subscribe-container {
   width: 80%;
   margin: 0 auto;
   text-align: center;
   padding-bottom: 16px;
+  /* to change */
+  margin-top: 28px;
 }
 
 .subscribe-container h3 {
@@ -880,6 +882,29 @@ input[type=submit] {
 
 .subscribe-container p {
   color: #777;
+}
+
+.subscribe-container form {
+  display: flex;
+  margin-top: 12px;
+}
+
+.subscribe-container .form-control {
+  padding: 8px;
+  border: 1px solid #777;
+  font-family: inherit;
+  margin-right: 5px;
+}
+
+.subscribe-container .submit {
+  cursor: pointer;
+  color: #fff;
+  font-family: inherit;
+  background-color: #f82249;
+  border: none;
+  padding: 12px 40px;
+  border-radius: 4px;
+  margin-left: 5px;
 }
 
 /*  *//*--------------------------------------------------------------
@@ -899,6 +924,7 @@ footer {
   justify-content: center;
   align-items: center;
   margin: 0 18px;
+  padding-top: 12px;
 }
 
 footer h3 {
@@ -906,8 +932,20 @@ footer h3 {
 }
 
 footer a {
-  color: #f82249;
+  color: #777;
+  margin-bottom: 14px;
+  font-size: 14px;
 }
+
+footer .socials div a i {
+  font-size: 22px;
+  padding: 0 8px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
 
 .footer-container .address-mail {
   display: flex;
