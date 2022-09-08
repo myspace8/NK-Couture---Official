@@ -901,7 +901,7 @@ footer {
 }
 
 footer h3 {
-  margin-bottom: 12px;
+  margin: 12px;
 }
 
 .footer-container .address-mail {
@@ -922,8 +922,8 @@ footer h3 {
   padding: 12px 0;
 }
 
-footer .socials img {
-  color: #fff;
+footer .socials div {
+  font-size: 18px;
 }
 
 footer .copyright {
