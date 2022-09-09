@@ -866,6 +866,12 @@ form .submit-btn {
   
 } */
 
+.subscribe-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .subscribe-container {
   width: 80%;
   margin: 0 auto;
@@ -877,7 +883,6 @@ form .submit-btn {
 
 .subscribe-container h3 {
   text-transform: uppercase;
-  /* margin-bottom: 12px; */
 }
 
 .subscribe-container p {
@@ -890,10 +895,17 @@ form .submit-btn {
 }
 
 .subscribe-container .form-control {
+  display: block;
   padding: 8px;
   border: 1px solid #777;
   font-family: inherit;
   margin-right: 5px;
+}
+
+.subscribe-container .form-control:focus {
+  outline: none;
+  border: none;
+  background-color: #ddd;
 }
 
 .subscribe-container .submit {
