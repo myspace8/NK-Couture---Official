@@ -897,15 +897,15 @@ form .submit-btn {
 .subscribe-container .form-control {
   display: block;
   padding: 8px;
-  border: 1px solid #777;
+  background-color: #ddd;
+  border: 1px solid transparent;
   font-family: inherit;
   margin-right: 5px;
 }
 
 .subscribe-container .form-control:focus {
   outline: none;
-  border: none;
-  background-color: #ddd;
+  background-color: rgba(221, 221, 221, 0.548);
 }
 
 .subscribe-container .submit {
