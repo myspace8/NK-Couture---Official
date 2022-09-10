@@ -932,20 +932,20 @@ footer {
 
 .footer-container {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
   align-items: center;
   margin: 0 18px;
   padding-top: 12px;
 }
 
 footer h3 {
+  font-size: 15px;
   margin: 12px;
 }
 
 footer a {
   color: #777;
-  margin-bottom: 14px;
   font-size: 14px;
 }
 
@@ -955,26 +955,29 @@ footer .socials div a i {
 }
 
 footer a:hover {
-  text-decoration: underline;
+  color: #f82249;
+}
+
+.location-address,
+.contact-phone,
+.socials,
+.email-address {
+  margin-bottom: 12px;
 }
 
 
 .footer-container .address-mail {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
   text-align: center;
-  gap: 28px;
-  padding: 12px 0;
 }
+
+
 
 .footer-container .phone-social {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
   text-align: center;
-  gap: 28px;
-  padding: 12px 0;
 }
 
 footer .socials div {
