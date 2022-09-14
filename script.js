@@ -30,62 +30,6 @@ overlay.addEventListener('click', () => {
     overlay.classList.remove('active');
 })
 
-
-// Gallery carousel
-const imageCarousel = document.querySelector('.image-container');
-const next = document.getElementById('right');
-const prev = document.getElementById('left');
-const carouselImage = document.querySelectorAll('.carousel img');
-
-const img = document.querySelectorAll('#imgs img');
-
-let idx = 3;
-
-let interval = setInterval(run, 5000);
-
-function run() {
-    idx++;
-    if(idx == img.length - 1) {
-        idx = 1;
-    }
-    changeImage()
-}
-
-function changeImage() {
-    if (idx > img.length - 1) {
-        idx = 1;
-    } else if (idx < 0) {
-        idx = img.length - 2;
-    }
-
-    imageCarousel.style.transform = `translateX(${-idx * 315}px)`;
-}
-
-changeImage()
-
-function resetInterval() {
-    clearInterval(interval);
-    interval = setInterval(run, 5000);
-}
-
-next.addEventListener('click', () => {
-    idx++;
-    if(idx == img.length -1) {
-        idx = 1;
-    }
-    changeImage();
-    resetInterval();
-})
-
-prev.addEventListener('click', () => {
-    idx--;
-    if(idx == 0) {
-        idx = -1;
-    }
-    changeImage();
-    resetInterval();
-})
-
 // Scrollto with ofset on links with a class name .scrollto
 
 const scrollto = document.querySelectorAll('.scrollto');
