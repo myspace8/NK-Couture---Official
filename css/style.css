@@ -770,16 +770,18 @@ a:hover, a:focus {
 }
 
 .testimonial-content {
-  display: flex;
-  align-items: center;
-  background-color: #000;
-  color: #fff;
-  padding: 12px 0;
-  padding-right: 5px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.testimonial-content .card {
+  background-color: #f9f7f7;
+  margin: 12px;
 }
 
 
 .testimonial-content img {
+  display: block;
   width: 100%;
   height: auto;
 }
@@ -794,125 +796,34 @@ a:hover, a:focus {
 
 .testimonial-content .testimony-text p {
   text-align: center;
+  margin-bottom: 12px;
+}
+
+
+.testimony-text .customer-name {
   font-size: 15px;
-  font-weight: 300;
-}
-
-.testimonial-content .testimony-text span {
   color: #777;
-  margin-top: 12px;
+  margin-bottom: 3px;
 }
 
+.customer-profession {
+  font-size: 13px;
+  color: #777;
+}
 
 @media (min-width: 990px) {
   .testimonial-content .testimony-text p {
-    font-size: 30px;
+    font-size: 20px;
   }
 
   .testimonial-content .testimony-text span {
-    font-size: 20px;
+    font-size: 17px;
   }
 }
 
 /*  *//*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
-
-/* #contact .contact-title {
-  padding-top: 28px;
-}
-
-#contact .contact-header {
-  text-align: center;
-  font-size: 12px;
-  color: #777;
-}
-
-#contact .form-container {
-  padding: 16px;
-}
-
-.form-control {
-  font-family: inherit;
-  padding: 12px;
-  border: 1px solid #777;
-  color: #f82249;
-  margin: 12px;
-}
-
-.form-control:focus, textarea:focus {
-  background-color: #ddd;
-  outline: none;
-  border: none;
-}
-form {
-  margin-bottom: 18px;
-}
-
-form .text-area {
-  max-width: 480px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 12px 0;
-}
-
-form .text-area textarea {
-  width: 100%;
-  margin: 0 auto;
-  padding: 12px;
-  font-family: inherit;
-  margin-bottom: 12px;
-  color: #f82249;
-}
-
-
-
-form .row {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-form .submit-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 70%;
-  margin: 0 auto;
-}
-
-.submit-btn input, .submit {
-  cursor: pointer;
-  color: #fff;
-  font-family: inherit;
-  background-color: #f82249;
-  border: none;
-  padding: 12px 40px;
-  border-radius: 4px;
-}
-
-@media (max-width: 552px) {
-  form .row {
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-  }
-
-  .mail, .name {
-    width: 100%;
-  }
-
-  input[type=text] {
-    width: 100%;
-    font-family: inherit;
-    border: 1px solid #777;
-    padding: 12px;
-    margin: 12px 0;
-  }
-  
-} */
 
 .subscribe-form-container {
   display: flex;
@@ -966,10 +877,6 @@ form .submit-btn {
   border-radius: 4px;
   margin-left: 5px;
 }
-
-/*  *//*--------------------------------------------------------------
-# Contact
---------------------------------------------------------------*/
 
 footer {
   background-color: #000;
