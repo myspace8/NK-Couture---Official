@@ -31,7 +31,6 @@ overlay.addEventListener('click', () => {
 })
 
 // Scrollto with ofset on links with a class name .scrollto
-
 const scrollto = document.querySelectorAll('.scrollto');
 scrollto.forEach(scrollto => {
     scrollto.addEventListener('click', () => {

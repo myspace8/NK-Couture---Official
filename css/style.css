@@ -31,7 +31,6 @@ a:hover, a:focus {
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
-
 .header {
   display: flex;
   align-items: center;
@@ -119,7 +118,6 @@ a:hover, a:focus {
 /*--------------------------------------------------------------
 # Mobile nav toggle
 --------------------------------------------------------------*/
-
 @media (max-width: 991px) {
   .navigation-burger {
     display: block;
@@ -153,7 +151,6 @@ a:hover, a:focus {
     right: 0;
     padding-top: 40px;
   }
-
   
   .nav-container .mobile-ul {
     background-color: transparent;
@@ -177,7 +174,6 @@ a:hover, a:focus {
   .nav-container .mobile-ul li a:active {
     color: #f82249;
   }
-  
 
   .active.nav-container .socials {
     display: flex;
@@ -194,7 +190,6 @@ a:hover, a:focus {
 
   .nav-container .socials img {
     background: #fff;
-    /* background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(248,34,73,1) 0%, rgb(170, 168, 168) 100%); */
     border-radius: 3px;
     transition: all 700ms ease;
   }
@@ -227,7 +222,6 @@ a:hover, a:focus {
 
 
   /* Nav Burger */
-
   .navigation-burger.is-clicked {
     height: 22.467px;
   }
@@ -268,12 +262,10 @@ a:hover, a:focus {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url(../img/hero-bg.png) top center;
+  background: url(../assets/img/hero-bg.PNG) top center;
   background-size: cover;
-  /* overflow: hidden; */
   position: relative;
 }
-
 
 #hero:before {
   content: "";
@@ -320,7 +312,6 @@ a:hover, a:focus {
 #hero p {
   color: #ebebeb;
   font-size: 20px;
-  /* margin-bottom: 18px; */
   text-align: center;
   width: 80%;
 }
@@ -372,8 +363,6 @@ a:hover, a:focus {
 /*--------------------------------------------------------------
 # --- Title component style
 --------------------------------------------------------------*/
-
-
 .title {
   text-align: center;
   padding-bottom: 30px;
@@ -399,7 +388,6 @@ a:hover, a:focus {
 /*--------------------------------------------------------------
 # Latest collection MOBILE VIEW 
 --------------------------------------------------------------*/
-
 .collection-mobile {
   padding-top: 28px !important;
 }
@@ -414,8 +402,6 @@ a:hover, a:focus {
   width: 75%;
   text-align: right;
 }
-
-
 
 #collection .content {
   display: flex;
@@ -434,7 +420,6 @@ a:hover, a:focus {
   left: 5%;
   z-index: -1;
 }
-
 
 #collection .collection-logo {
   position: relative;
@@ -476,7 +461,6 @@ a:hover, a:focus {
 /*--------------------------------------------------------------
 # GALLERY
 --------------------------------------------------------------*/
-
 #gallery .gallery-title {
   padding-bottom: 0;
 }
@@ -595,7 +579,6 @@ a:hover, a:focus {
     grid-row: 1 / 8;
     margin: 4em 0;
     background: #23262b;
-    /* background: #000; */
   }
   
   .header-1 {
@@ -675,7 +658,6 @@ a:hover, a:focus {
 }  
 
 /* Speranza collection breakpoint style */
-
 @media (max-width: 1145px) and (min-width: 991px) {
   .collection-desktop {
     overflow-x: hidden;
@@ -720,13 +702,11 @@ a:hover, a:focus {
 /*--------------------------------------------------------------
 # container Media Queries
 --------------------------------------------------------------*/
-
 @media (min-width: 576px) {
   .container {
     max-width: 540px;
   }
 }
-
 
 @media (min-width: 768px) {
   .container {
@@ -757,7 +737,6 @@ a:hover, a:focus {
 /*--------------------------------------------------------------
 # Testimonial 
 --------------------------------------------------------------*/
-
 .testimonial-title {
   padding-bottom: 16px;
 }
@@ -779,7 +758,6 @@ a:hover, a:focus {
   margin: 12px;
 }
 
-
 .testimonial-content img {
   display: block;
   width: 100%;
@@ -798,7 +776,6 @@ a:hover, a:focus {
   text-align: center;
   margin-bottom: 12px;
 }
-
 
 .testimony-text .customer-name {
   font-size: 15px;
@@ -824,7 +801,6 @@ a:hover, a:focus {
 /*  *//*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
-
 .subscribe-form-container {
   display: flex;
   justify-content: center;
@@ -836,7 +812,6 @@ a:hover, a:focus {
   margin: 0 auto;
   text-align: center;
   padding-bottom: 16px;
-  /* to change */
   margin-top: 28px;
 }
 
@@ -878,6 +853,10 @@ a:hover, a:focus {
   margin-left: 5px;
 }
 
+
+/*  *//*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
 footer {
   background-color: #000;
   color: #ddd;
@@ -920,14 +899,11 @@ footer a:hover {
   margin-bottom: 12px;
 }
 
-
 .footer-container .address-mail {
   display: flex;
   flex-direction: column;
   text-align: center;
 }
-
-
 
 .footer-container .phone-social {
   display: flex;
