@@ -296,6 +296,7 @@ a:hover, a:focus {
   text-transform: uppercase;
   margin-bottom: 1rem;
   text-align: center;
+  animation: fadeInUp 500ms ease-in-out;
 }
 
 .dot {
@@ -307,6 +308,7 @@ a:hover, a:focus {
   font-size: 30px;
   text-transform: uppercase;
   text-align: center;
+  animation: fadeInUp 500ms ease-in-out 200ms;
 }
 
 #hero p {
@@ -314,6 +316,7 @@ a:hover, a:focus {
   font-size: 20px;
   text-align: center;
   width: 80%;
+  animation: fadeInUp 500ms ease-in-out 400ms;
 }
 
 #hero a:hover {
@@ -358,6 +361,20 @@ a:hover, a:focus {
 #collection,
 #gallery {
   padding-top: 18px;
+}
+
+
+/* ANIMATIONS */
+
+@keyframes fadeInUp {
+
+  0% {
+      opacity: 0;
+  }
+
+  100% {
+      opacity: 1;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -750,7 +767,9 @@ a:hover, a:focus {
 
 .testimonial-content {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  width: 95%;
+  margin: auto;
 }
 
 .testimonial-content .card {
