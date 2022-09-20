@@ -455,6 +455,19 @@ a:hover, a:focus {
   text-align: center;
 }
 
+@media (max-width: 374px) {
+  #collection .collection-logo h1 {
+    left: -3.9em;
+  }
+}
+
+@media (max-width: 349px) {
+  #collection .collection-logo h1 {
+    transform: rotate(0);
+    letter-spacing: 0;
+  }
+}
+
 #collection .collection-logo h1 span {
   font-size: 12px;
   letter-spacing: 8px;
