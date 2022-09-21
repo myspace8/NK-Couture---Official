@@ -854,7 +854,7 @@ a:hover, a:focus {
   font-size: 14px;
 }
 
-.input-container input {
+.form-control {
   width: 100%;
   padding: 12px;
   margin: 8px 0;
@@ -863,7 +863,7 @@ a:hover, a:focus {
   outline: none;
 }
 
-.input-container input:focus {
+.form-control:focus {
   outline: 1px solid #f82249;
 }
 
@@ -874,7 +874,7 @@ a:hover, a:focus {
   margin-top: 5px;
 }
 
-.submit-container .submit {
+.submit {
   background: #f82249;
   color: #fff;
   border: none;

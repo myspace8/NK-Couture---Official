@@ -36,7 +36,6 @@ scrollto.forEach(scrollto => {
 
 
 const alertEvent = document.querySelectorAll('.alert-on-click');
-
 alertEvent.forEach(button => {
     button.addEventListener('click', (e) => {
         e.preventDefault();
