@@ -11,9 +11,13 @@
 }
 
 body {
-  background: #fff;
+  background: linear-gradient(#fff 97%, #000 3%);
   font-family: 'Inter', sans-serif;
   font-size: 16px;
+}
+
+body.stop-scroll {
+  overflow-y: hidden;
 }
 
 a {
@@ -208,18 +212,6 @@ a:hover, a:focus {
   .nav-container .socials a {
     margin: 12px;
   }
-
-  /* Overlay */
-  .active.overlay {
-    position: fixed;
-    background: rgba(0, 0, 0, 0.51);
-    width: 100%;
-    height: 100vh;
-    left: 0;
-    top: 0;
-    z-index: 1;
-  }
-
 
   /* Nav Burger */
   .navigation-burger.is-clicked {
@@ -833,58 +825,63 @@ a:hover, a:focus {
 /*  *//*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
-.subscribe-form-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.subscribe-container {
+  max-width: 602px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-.subscribe-container {
+.input-container {
   width: 80%;
   margin: 0 auto;
-  text-align: center;
-  padding-bottom: 16px;
-  margin-top: 28px;
 }
 
-.subscribe-container h3 {
+.text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 12px;
+} 
+
+.text-container h3 {
   text-transform: uppercase;
 }
 
-.subscribe-container p {
+.text-container p {
   color: #777;
+  font-size: 14px;
 }
 
-.subscribe-container form {
-  display: flex;
-  margin-top: 12px;
-}
-
-.subscribe-container .form-control {
-  display: block;
-  padding: 8px;
-  background-color: #ddd;
-  border: 1px solid transparent;
-  font-family: inherit;
-  margin-right: 5px;
-}
-
-.subscribe-container .form-control:focus {
+.form-control {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
   outline: none;
-  background-color: rgba(221, 221, 221, 0.548);
 }
 
-.subscribe-container .submit {
-  cursor: pointer;
+.form-control:focus {
+  outline: 1px solid #f82249;
+}
+
+.submit-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.submit {
+  background: #f82249;
   color: #fff;
-  font-family: inherit;
-  background-color: #f82249;
   border: none;
-  padding: 12px 40px;
   border-radius: 4px;
-  margin-left: 5px;
+  cursor: pointer;
+  padding: 12px 40px;
 }
-
 
 /*  *//*--------------------------------------------------------------
 # Footer

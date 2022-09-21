@@ -13,22 +13,14 @@ function stickHeader() {
 // Mobile navigation toggle
 const navBurger = document.querySelector('.navigation-burger');
 const nav = document.querySelector('.nav-container');
-const overlay = document.querySelector('.overlay');
-
+const body = document.querySelector('body');
 navBurger.addEventListener('click', function(e) {
     e.preventDefault();
     nav.classList.toggle('active');
     navBurger.classList.toggle('is-clicked');
     header.classList.toggle('header-active');
-    overlay.classList.toggle('active');
+    body.classList.toggle('stop-scroll');
 });
-
-overlay.addEventListener('click', () => {
-    nav.classList.remove('active');
-    navBurger.classList.remove('is-clicked');
-    header.classList.remove('header-active');
-    overlay.classList.remove('active');
-})
 
 // Scrollto with ofset on links with a class name .scrollto
 const scrollto = document.querySelectorAll('.scrollto');
@@ -37,8 +29,17 @@ scrollto.forEach(scrollto => {
         if(nav.classList.contains('active')) {
             nav.classList.remove('active');
             navBurger.classList.toggle('is-clicked');
-            overlay.classList.remove('active');
+            body.classList.toggle('stop-scroll');
         }
     })
 });
 
+
+const alertEvent = document.querySelectorAll('.alert-on-click');
+
+alertEvent.forEach(button => {
+    button.addEventListener('click', (e) => {
+        e.preventDefault();
+        alert('You are on the official NK couture website, which is currently under development. You can reach out in any of contacts provided at the bottom of the page. Have a great day!')
+    })
+})
