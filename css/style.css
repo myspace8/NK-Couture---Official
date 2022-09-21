@@ -825,7 +825,7 @@ a:hover, a:focus {
 /*  *//*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
-.subscribe-container {
+#contact .subscribe-container {
   max-width: 602px;
   margin: 0 auto;
   padding: 20px;
@@ -854,7 +854,7 @@ a:hover, a:focus {
   font-size: 14px;
 }
 
-.form-control {
+.input-container input {
   width: 100%;
   padding: 12px;
   margin: 8px 0;
@@ -863,7 +863,7 @@ a:hover, a:focus {
   outline: none;
 }
 
-.form-control:focus {
+.input-container input:focus {
   outline: 1px solid #f82249;
 }
 
@@ -874,7 +874,7 @@ a:hover, a:focus {
   margin-top: 5px;
 }
 
-.submit {
+.submit-container .submit {
   background: #f82249;
   color: #fff;
   border: none;
