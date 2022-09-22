@@ -188,7 +188,7 @@ a:hover, a:focus {
     position: absolute;
     left: 0;
     right: 0;
-    top: 320px;
+    top: 370px;
   }
 
   .nav-container .socials img {
@@ -285,7 +285,7 @@ a:hover, a:focus {
   color: #fff;
   font-size: 56px;
   text-transform: uppercase;
-  margin-bottom: 1rem;
+  margin-bottom: 0.3rem;
   text-align: center;
   animation: fadeInUp 500ms ease-in-out;
 }
@@ -298,6 +298,7 @@ a:hover, a:focus {
   color: #fff;
   font-size: 30px;
   text-transform: uppercase;
+  margin-bottom: 0.3rem;
   text-align: center;
   animation: fadeInUp 500ms ease-in-out 200ms;
 }
@@ -306,6 +307,7 @@ a:hover, a:focus {
   color: #ebebeb;
   font-size: 20px;
   text-align: center;
+  margin-bottom: 0;
   width: 80%;
   animation: fadeInUp 500ms ease-in-out 400ms;
 }
@@ -804,7 +806,6 @@ a:hover, a:focus {
 .testimony-text .customer-name {
   font-size: 15px;
   color: #777;
-  margin-bottom: 3px;
 }
 
 .customer-profession {
@@ -820,6 +821,72 @@ a:hover, a:focus {
   .testimonial-content .testimony-text span {
     font-size: 17px;
   }
+}
+
+/*  *//*--------------------------------------------------------------
+# Contact
+--------------------------------------------------------------*/
+
+.event-title {
+  padding-bottom: 0;
+}
+
+.event-title h2 {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+
+.event-image-container {
+  position: relative;
+  margin: 12px 20px;
+}
+
+.event-image-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.event-text-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.247);
+  color: #fff;
+  border-radius: 3px;
+  text-align: center;
+  bottom: 50px;
+  top: 50%;
+  left: 0;
+  right: 0;
+  margin: 0 20px;
+  padding: 8px;
+}
+
+.event-text-content h3 {
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.event-text-content h1 {
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+.event-text-content p {
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+
+.event-text-content a {
+  background-color: #f82249;
+  border-radius: 0.25rem;
+  color: #fff;
+  padding: 8px 20px;
 }
 
 /*  *//*--------------------------------------------------------------
@@ -841,7 +908,6 @@ a:hover, a:focus {
   justify-content: center;
   align-items: center;
   text-align: center;
-  /* margin-bottom: 12px; */
 } 
 
 .text-container h3 {
