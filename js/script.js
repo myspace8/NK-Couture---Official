@@ -39,6 +39,6 @@ const alertEvent = document.querySelectorAll('.alert-on-click');
 alertEvent.forEach(button => {
     button.addEventListener('click', (e) => {
         e.preventDefault();
-        alert('You are on the official NK Couture website, which is CURRENTLY UNDER DEVELOPMENT. Please reach out in any of the contacts provided at the bottom of the page. Thank you!')
+        alert('Website is CURRENTLY UNDER DEVELOPMENT.')
     })
 })
