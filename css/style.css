@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;800&family=Open+Sans:wght@400;700;800&family=Raleway:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800&family=Open+Sans:wght@400;700;800&family=Raleway:wght@400;500&display=swap');
 
 * {
     box-sizing: border-box;
@@ -762,11 +762,11 @@ a:hover, a:focus {
   padding-bottom: 0;
 }
 
-.testimonial-title p {
+.testimonial-title h2 {
   font-size: 18px;
   text-transform: uppercase;
-  font-weight: 700;
-  margin-top: 12px;
+  font-weight: 600;
+  margin-top: 15px;
   margin-bottom: 0;
 }
 
