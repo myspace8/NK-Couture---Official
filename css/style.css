@@ -774,7 +774,7 @@ a:hover, a:focus {
 
 .testimonial-content {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   width: 95%;
   margin: auto;
 }
@@ -824,7 +824,7 @@ a:hover, a:focus {
 }
 
 /*  *//*--------------------------------------------------------------
-# Contact
+# Event
 --------------------------------------------------------------*/
 
 .event-title {
@@ -836,12 +836,13 @@ a:hover, a:focus {
   text-transform: uppercase;
   font-weight: 600;
   margin-top: 15px;
-  margin-bottom: 0;
+  margin-bottom: 12px;
 }
 
 .event-image-container {
   position: relative;
-  margin: 12px 20px;
+  max-width: 860px;
+  margin: 0 auto;
 }
 
 .event-image-container img {
