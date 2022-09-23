@@ -856,7 +856,9 @@ a:hover, a:focus {
   justify-content: center;
   align-items: center;
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.247);
+  backdrop-filter: blur(8px) saturate(180%);
+  -webkit-backdrop-filter: blur(8px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.75);
   color: #fff;
   border-radius: 3px;
   text-align: center;
